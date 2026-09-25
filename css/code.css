@@ -1,0 +1,94 @@
+:root {
+  --bg: #f4efe6;
+  --bg-2: #ebe4d6;
+  --panel: #fbf8f2;
+  --line: #d9cfbd;
+  --text: #2b2622;
+  --muted: #6b625a;
+  --accent: #b5532f;
+  --accent-2: #4f6b4a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 48px 20px 80px;
+}
+
+a { color: var(--accent); }
+
+.back {
+  display: inline-block;
+  margin-bottom: 24px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+h1 { font-size: 2rem; margin: 0 0 8px; }
+
+.desc { color: var(--muted); margin: 0 0 24px; }
+
+.toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+.toc a {
+  display: inline-block;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  text-decoration: none;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.85rem;
+}
+
+.toc a:hover { border-color: var(--accent); }
+
+.toc.files { flex-direction: column; align-items: flex-start; }
+
+.file {
+  margin-bottom: 32px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--panel);
+}
+
+.file header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.file h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+}
+
+.file header a { font-size: 0.85rem; }
+
+pre {
+  margin: 0;
+  padding: 16px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}

@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'game';
+    src: url('../fonts/Games-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Retro';
+    src: url('../fonts/RETROTECH.ttf');
+}
+
+/*Para controlar todos los márgenes de forma manual*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+header {
+    background-color: rgb(7, 174, 158);
+    color: white;
+    padding: 30px;
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: 'game';
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Menú */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: inline-block;
+    background-color: rgb(174, 7, 121);
+    color: white;
+    font-weight: 400;
+    font-family: 'game', sans-serif;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    text-decoration: none;                       
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 20px;
+}
+
+nav ul li a:hover {
+    opacity: 0.8;
+}
+
+.principal_1{
+    background-color: rgb(119, 140, 161);
+    padding-bottom: 110px;
+}
+
+/* Sección con imagen de fondo */
+.foto-mando {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-image: url(../img/fondo2.jpg);
+    background-size: cover;
+    background-position: center 50%;          /*centra la imagen horizontalmente y el 50% significa que el punto medio de la imagen se alinea con el punto medio del contenedor. Tambien podria haber recortado la imagen original, ponerla en la carpeta /img y meterla tal cual*/
+    background-repeat: no-repeat;
+}
+
+/*Titulo: Vive de nuevo la pasión...*/
+.texto-principal {
+    font-family: 'game';
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-top: 55px;
+} 
+
+/* Contenedor de los 3 juegos */
+.juegos-container {
+    text-align: center;
+    padding-top: 70px;
+}
+
+.caja-juego {
+    width: 220px;
+    height: 300px;
+    border: 1px solid #CCC;
+    background-color: whitesmoke;
+    font-family: 'game';
+    border-radius: 5px;
+    display: inline-block;
+    margin: 0 10px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.caja-juego img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.caja-juego h3 {
+    color: black;
+    margin: 20px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+}
+
+.caja-juego p {
+    color: rgb(165, 42, 126);
+    text-align: center;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(1, 108, 97);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+/*======================================  Arkanoid  =====================================*/
+
+.arkanoid {
+    background-image: url(../img/fondoretro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center 55%;
+    padding-bottom: 70px; 
+    padding-top: 5px;
+    
+}
+
+.titulo-arkanoid {
+    font-family: 'Retro';
+    color: white;
+    font-size: 52px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.marcador {
+    text-align: center;
+    background-color: black;
+}
+
+.caja-marcador{
+    border: none;
+    border-style: none;
+    background-color: black;
+}
+
+.titulo-marcador {
+    font-weight: bold;
+    padding-top: 5px;
+    margin-bottom: 8px;
+    font-family: 'Retro';
+    color: red;
+    font-size: 40px;
+}
+
+.numeros-marcador {
+    text-align: center;
+    border-bottom: 5px solid white;
+    padding-bottom: 5px;
+}
+
+.numeros-marcador span {                /*uso span para agrupar y aplicar estilos a cada span que he definido en el .html*/
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Retro';
+    color: white;
+    display: inline-block;            /*para que los dos marcadores esten en la misma linea*/
+    margin: 0 20px;                     /*margen de 20px entre '00 y 50000'*/
+}
+
+/* Tabla del juego */
+.tabla-juego {
+    width: 800px;
+    height: 500px;
+    border: 5px groove rgb(237, 175, 5);
+    border-radius: 10px;
+    background-color: rgb(62, 59, 59);
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.tabla-juego tr {
+    height: 40px;
+}
+
+.tabla-juego td {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(62, 59, 59);
+    position: relative;
+}
+
+/* Celdas con colores */
+
+.tabla-juego td.celda-gris{
+    background-color: rgb(62, 59, 59);
+    border: 1px outset grey;
+    border-radius: 2px;
+}
+
+.tabla-juego td.celda-roja {
+    background: rgb(239, 5, 5);
+    border: 1px outset grey;
+    border-radius: 2px;
+}
+
+.tabla-juego td.celda-amarilla {
+    background: rgb(239, 216, 5);
+    border: 1px outset grey;
+    border-radius: 2px;
+}
+
+.tabla-juego td.celda-azul {
+    background: blue;
+    border: 1px outset grey;
+    border-radius: 2px;
+}
+
+.tabla-juego td.celda-violeta {
+    background: violet;
+    border: 1px outset grey;
+    border-radius: 2px;
+}
+
+.tabla-juego td.celda-verde {
+    background: green;
+    border: 1px outset grey;
+    border-radius: 2px;
+}
+
+.tabla-juego td.celda-gris-vacia {
+    background-color: rgb(62, 59, 59);
+    border: none;
+}
+
+/* Barra del juego */
+.barra {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.barra img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Bola del juego */
+.bola {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0px;
+    position: relative;
+    top: 10px;
+}
+
+
+/*======================================== Formulario ================================ */
+
+.principal-3 {
+    background-image: url('../img/web_construccion.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 50%;
+    height: 865px; 
+    width: 100%;
+}
+
+

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Currículum y portfolio de Pedro Gutiérrez La Ossa, estudiante de ASIR orientado a sistemas y ciberseguridad." />
+  <title>Pedro Gutiérrez · Currículum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Navegación ===== -->
+  <nav class="nav">
+    <div class="container">
+      <a href="#inicio" class="logo">pedro<span>@</span>asir</a>
+      <ul>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#curriculum">Currículum</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== Hero ===== -->
+  <header class="hero" id="inicio">
+    <div class="container">
+      <div>
+        <p class="prompt">$ whoami</p>
+        <h1>Pedro <span>Gutiérrez</span><br />La Ossa</h1>
+        <p class="rol">Estudiante de ASIR orientado a la administración de sistemas, redes y ciberseguridad.</p>
+        <div class="botones">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        </div>
+      </div>
+      <div class="foto">
+        <img src="img/yo.jpg" alt="Foto de Pedro Gutiérrez" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Sobre mí ===== -->
+    <section class="seccion" id="sobre-mi">
+      <div class="container">
+        <p class="etiqueta">01 // sobre mí</p>
+        <h2>¿Quién soy?</h2>
+        <div class="sobre">
+          <div>
+            <p>Me interesa entender cómo funciona la tecnología por dentro: montar servidores, automatizar tareas con scripts, diseñar redes y, sobre todo, encontrar y corregir vulnerabilidades.</p>
+            <p>Mi objetivo es trabajar como <b>administrador de sistemas</b> o <b>analista de ciberseguridad</b>. Debajo tienes los proyectos y prácticas que he hecho durante el ciclo.</p>
+          </div>
+          <ul class="datos">
+            <li><span>edad</span> 19</li>
+            <li><span>estudios</span> 2º ASIR</li>
+            <li><span>centro</span> UEM</li>
+            <li><span>ubicación</span> Madrid</li>
+            <li><span>proyectos</span> 25+</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Currículum ===== -->
+    <section class="seccion alt" id="curriculum">
+      <div class="container">
+        <p class="etiqueta">02 // currículum</p>
+        <h2>Mi recorrido</h2>
+        <div class="cv">
+
+          <div>
+            <h3>Formación</h3>
+            <ul class="timeline">
+              <li>
+                <span class="fecha">2025 – 2027</span>
+                <h4>CFGS Administración de Sistemas Informáticos en Red</h4>
+                <p>Universidad Europea de Madrid. Redes, sistemas operativos, bases de datos, lenguaje de marcas y ciberseguridad.</p>
+              </li>
+              <li>
+                <span class="fecha">2023 – 2025</span>
+                <h4>Bachillerato Tecnológico</h4>
+                <p>IES Los Rosales, Móstoles. Itinerario científico-tecnológico.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Experiencia</h3>
+            <ul class="timeline">
+              <li>
+                <span class="fecha">2026 – Actualidad</span>
+                <h4>Laboratorio propio de seguridad</h4>
+                <p>Pentesting de aplicaciones web y sistemas en entornos virtualizados con Kali Linux, Metasploitable y Windows.</p>
+              </li>
+              <li>
+                <span class="fecha">2025</span>
+                <h4>Diseño web freelance</h4>
+                <p>Creación de páginas web estáticas con HTML y CSS.</p>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Habilidades</h3>
+            <ul class="skills">
+              <li>Linux</li>
+              <li>Windows Server</li>
+              <li>Bash</li>
+              <li>PowerShell</li>
+              <li>Python</li>
+              <li>SQL / MySQL</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Cisco Packet Tracer</li>
+              <li>Wireshark</li>
+              <li>Kali Linux</li>
+              <li>Metasploit</li>
+              <li>Nagios</li>
+              <li>VirtualBox / VMware</li>
+              <li>AWS</li>
+            </ul>
+            <h3>Idiomas</h3>
+            <ul class="idiomas">
+              <li>Inglés <span>B2</span></li>
+              <li>Francés <span>B2</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Proyectos ===== -->
+    <section class="seccion" id="proyectos">
+      <div class="container">
+        <p class="etiqueta">03 // proyectos</p>
+        <h2>Lo que he hecho</h2>
+
+        <h3 class="filtro-titulo">Ciberseguridad</h3>
+        <div class="grid">
+          <a class="card" href="proyectos/documentos/pentesting-wordpress.pdf" target="_blank" rel="noopener">
+            <p class="tags">Pentesting · WordPress</p>
+            <h4>Informe de pentesting</h4>
+            <p>Auditoría completa a un WordPress: reconocimiento, explotación, evidencias y recomendaciones.</p>
+            <span class="ver">Ver informe →</span>
+          </a>
+          <a class="card" href="proyectos/documentos/hacking-web.pdf" target="_blank" rel="noopener">
+            <p class="tags">Seguridad web</p>
+            <h4>Hacking de una web</h4>
+            <p>Búsqueda y explotación de vulnerabilidades en una aplicación web en un entorno controlado.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+          <a class="card" href="proyectos/documentos/man-in-the-middle.pdf" target="_blank" rel="noopener">
+            <p class="tags">Redes · ARP spoofing</p>
+            <h4>Man in the Middle</h4>
+            <p>Envenenamiento de tablas ARP para interceptar el tráfico entre dos equipos.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+          <a class="card" href="proyectos/documentos/reverse-tcp-shell.pdf" target="_blank" rel="noopener">
+            <p class="tags">Metasploit · Windows</p>
+            <h4>Reverse TCP Shell</h4>
+            <p>Obtención de una shell inversa sobre un equipo víctima con payloads de Metasploit.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+          <a class="card" href="proyectos/documentos/analisis-http-wireshark.pdf" target="_blank" rel="noopener">
+            <p class="tags">Wireshark · HTTP</p>
+            <h4>Análisis de tráfico HTTP</h4>
+            <p>Captura y análisis de peticiones y respuestas HTTP con Wireshark.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+          <a class="card" href="proyectos/documentos/cifrado-linux.pdf" target="_blank" rel="noopener">
+            <p class="tags">Linux · Criptografía</p>
+            <h4>Cifrado en Linux</h4>
+            <p>Cifrado y descifrado de archivos con herramientas nativas de Linux.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+        </div>
+
+        <h3 class="filtro-titulo">Sistemas y redes</h3>
+        <div class="grid">
+          <a class="card" href="proyectos/documentos/nagios.pdf" target="_blank" rel="noopener">
+            <p class="tags">Monitorización</p>
+            <h4>Monitorización con Nagios</h4>
+            <p>Implantación de Nagios para vigilar servidores y servicios en un entorno empresarial.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+          <a class="card" href="proyectos/documentos/osticket.pdf" target="_blank" rel="noopener">
+            <p class="tags">Helpdesk · LAMP</p>
+            <h4>Gestión de incidencias con osTicket</h4>
+            <p>Despliegue de un sistema de tickets para una empresa simulada.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+          <a class="card" href="proyectos/scripts-bash/index.html">
+            <p class="tags">Bash · Linux</p>
+            <h4>Scripts en Bash</h4>
+            <p>13 scripts de administración: usuarios, ficheros, procesos y automatización.</p>
+            <span class="ver">Ver código →</span>
+          </a>
+          <a class="card" href="proyectos/scripts-powershell/index.html">
+            <p class="tags">PowerShell · Windows</p>
+            <h4>Scripts en PowerShell</h4>
+            <p>Creación de usuarios, copias de seguridad, lectura de logs y monitorización de servicios.</p>
+            <span class="ver">Ver código →</span>
+          </a>
+          <a class="card" href="proyectos/redes/index.html">
+            <p class="tags">Cisco Packet Tracer</p>
+            <h4>Diseño de redes</h4>
+            <p>Topologías, direccionamiento y enrutamiento simulados en Packet Tracer.</p>
+            <span class="ver">Ver archivos →</span>
+          </a>
+          <a class="card" href="proyectos/documentos/ip-http-dns.pdf" target="_blank" rel="noopener">
+            <p class="tags">Redes · Protocolos</p>
+            <h4>IP, HTTP y DNS</h4>
+            <p>Estudio práctico de los protocolos IP, HTTP y DNS.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+          <a class="card" href="proyectos/sql/index.html">
+            <p class="tags">MySQL</p>
+            <h4>Bases de datos SQL</h4>
+            <p>Tablas, inserciones, funciones, procedimientos, transacciones, triggers y vistas.</p>
+            <span class="ver">Ver código →</span>
+          </a>
+          <a class="card" href="proyectos/documentos/dual-boot.pdf" target="_blank" rel="noopener">
+            <p class="tags">Virtualización</p>
+            <h4>Dual boot en máquina virtual</h4>
+            <p>Instalación de dos sistemas operativos con arranque dual.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+          <a class="card" href="proyectos/documentos/fdisk.pdf" target="_blank" rel="noopener">
+            <p class="tags">Linux · Discos</p>
+            <h4>Particiones con fdisk</h4>
+            <p>Creación, formateo y montaje de particiones desde la terminal.</p>
+            <span class="ver">Ver práctica →</span>
+          </a>
+        </div>
+
+        <h3 class="filtro-titulo">Desarrollo web</h3>
+        <div class="grid">
+          <a class="card" href="https://github.com/alca1305/PFROYECTO-MARCAS" target="_blank" rel="noopener">
+            <p class="tags">Proyecto en equipo · HTML · CSS</p>
+            <h4>Arigastell MH</h4>
+            <p>Web multipágina de una empresa de montaña: fichas de cimas, reservas y ubicación.</p>
+            <span class="ver">Ver en GitHub →</span>
+          </a>
+          <a class="card" href="proyectos/web-retro/index.html">
+            <p class="tags">HTML · CSS</p>
+            <h4>Juegos retro</h4>
+            <p>Web de juegos clásicos (Arkanoid, Pac-Man, Donkey Kong) con tipografías propias y formulario.</p>
+            <span class="ver">Ver proyecto →</span>
+          </a>
+          <a class="card" href="proyectos/flip-cards/index.html">
+            <p class="tags">CSS · Animaciones</p>
+            <h4>Tarjetas giratorias</h4>
+            <p>Tarjetas con efecto flip 3D que presentan los grados de ASIR, DAM y DAW.</p>
+            <span class="ver">Ver proyecto →</span>
+          </a>
+          <a class="card" href="proyectos/login/index.html">
+            <p class="tags">HTML · Formularios</p>
+            <h4>Registro e inicio de sesión</h4>
+            <p>Formularios de registro y login con diseño glassmorphism.</p>
+            <span class="ver">Ver proyecto →</span>
+          </a>
+          <a class="card" href="proyectos/marvel/index.html">
+            <p class="tags">HTML · Tablas</p>
+            <h4>Tabla periódica Marvel</h4>
+            <p>Los personajes de Marvel organizados como una tabla periódica.</p>
+            <span class="ver">Ver proyecto →</span>
+          </a>
+          <a class="card" href="proyectos/monopoly/index.html">
+            <p class="tags">HTML · Tablas</p>
+            <h4>Tablero de Monopoly</h4>
+            <p>Recreación del tablero de Monopoly usando tablas HTML.</p>
+            <span class="ver">Ver proyecto →</span>
+          </a>
+          <a class="card" href="proyectos/parchis/index.html">
+            <p class="tags">HTML · Tablas</p>
+            <h4>Parchís de Juego de Tronos</h4>
+            <p>Tablero de parchís temático con los estandartes de las casas de Poniente.</p>
+            <span class="ver">Ver proyecto →</span>
+          </a>
+          <a class="card" href="proyectos/cafe/index.html">
+            <p class="tags">HTML · CSS</p>
+            <h4>Cafetería Lomas</h4>
+            <p>Landing de una cafetería con carta de productos y tipografía personalizada.</p>
+            <span class="ver">Ver proyecto →</span>
+          </a>
+          <a class="card" href="proyectos/tetris/index.html">
+            <p class="tags">CSS · Maquetación</p>
+            <h4>Tetris</h4>
+            <p>Pantalla de Tetris maquetada con HTML y CSS.</p>
+            <span class="ver">Ver proyecto →</span>
+          </a>
+          <a class="card" href="proyectos/bmw/index.html">
+            <p class="tags">CSS · Posicionamiento</p>
+            <h4>Logo de BMW</h4>
+            <p>Recreación del logo de BMW con CSS.</p>
+            <span class="ver">Ver proyecto →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section class="seccion alt" id="contacto">
+      <div class="container">
+        <p class="etiqueta">04 // contacto</p>
+        <h2>Hablemos</h2>
+        <div class="contacto">
+          <a href="mailto:p.guti2025@gmail.com">
+            <b>Email</b>
+            <span>p.guti2025@gmail.com</span>
+          </a>
+          <a href="tel:+34696066092">
+            <b>Teléfono</b>
+            <span>+34 696 066 092</span>
+          </a>
+          <a href="https://github.com/pguti2025-a11y" target="_blank" rel="noopener">
+            <b>GitHub</b>
+            <span>pguti2025-a11y</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; 2026 Pedro Gutiérrez La Ossa · Hecho con HTML y CSS
+    </div>
+  </footer>
+
+</body>
+</html>
