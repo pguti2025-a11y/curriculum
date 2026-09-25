@@ -384,3 +384,6 @@ footer {
   .nav ul li:not(:last-child) { display: none; }
   .hero { padding-top: 56px; }
 }
+
+.certs li { gap: 12px; font-size: 0.92rem; }
+.certs span { text-align: right; flex-shrink: 0; font-size: 0.8rem; }
